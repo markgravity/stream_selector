@@ -102,7 +102,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             StreamSelector(
               stream: _counterController.stream,
-              builder: (context, counter, child) =>  Text(
+              builder: (context, counter, child) => Text(
                 '$counter',
                 style: Theme.of(context).textTheme.headline4,
               ),

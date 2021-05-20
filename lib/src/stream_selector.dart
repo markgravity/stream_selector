@@ -60,7 +60,7 @@ class _StreamSelectorState<T> extends SingleChildState<StreamSelector<T>> {
 
         final selected = snapshot.data;
         var shouldInvalidateCache = oldWidget != widget ||
-          !const DeepCollectionEquality().equals(value, selected);
+            !const DeepCollectionEquality().equals(value, selected);
         if (shouldInvalidateCache) {
           value = selected;
           oldWidget = widget;
